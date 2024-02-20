@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class RECT{
+-px
+-py
+-dx
+-dy
++onClick(x,y)
++onMove(x,y)
++onKeypress(key)
++Draw_border(x,y,dx,dy)
++Draw_pic(x,y,pic)
++Draw_Text(x,y,text)
++Draw_Fill(x,y,dx,dy,color)
+}
+
+class Door{
+-Titulo: String
+-Salir: String
+-Color: pic
+}
+
+class Keyboard{
+
+}
+
+RECT <|--- Door
+Keyboard<|---- RECT
+@enduml
